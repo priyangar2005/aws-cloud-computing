@@ -1,0 +1,8 @@
+#!/bin/bash
+sudo su
+sudo yum update -y
+sudo yum install httpd -y
+cd /var/www/html
+echo "my name is priyanga" >index.html
+service httpd start
+chkconfig httpd on
